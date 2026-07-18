@@ -4,15 +4,15 @@ local placeId = game.PlaceId
 
 local Games = {
     -- legado da pedra
-    [4520749081]   = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/KingLegacy.lua"},
-    [6381829480]   = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/KingLegacy.lua"},
-    [15759515082]  = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/KingLegacy.lua"},
+    [4520749081]   = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/kl.lua"},
+    [6381829480]   = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/kl.lua"},
+    [15759515082]  = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/kl.lua"},
     
     -- brocha frutas
-    [2753915549]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/BloxFruits.lua"},
-    [4442272183]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/BloxFruits.lua"},
-    [79091703265657] = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/BloxFruits.lua"},
-    [7449423635]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/BloxFruits.lua"},
+    [2753915549]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
+    [4442272183]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
+    [79091703265657] = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
+    [7449423635]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
 }
 
 local gameData = Games[placeId]
