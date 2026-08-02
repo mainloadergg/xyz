@@ -7,8 +7,6 @@ local Games = {
     [4520749081]   = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/kl.lua"},
     [6381829480]   = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/kl.lua"},
     [15759515082]  = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/kl.lua"},
-    
-    -- brocha frutas
     [2753915549]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
     [4442272183]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
     [79091703265657] = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
@@ -19,7 +17,7 @@ local gameData = Games[placeId]
 
 if not gameData then
     if player then
-        player:Kick("Wrong game.\nThis script only supports:\n— King Legacy\n— Blox Fruits")
+        player:Kick("Wrong game, This script only supports:\n— King Legacy & Blox Fruits")
     end
     return
 end
