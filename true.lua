@@ -3,21 +3,18 @@ local player = Players.LocalPlayer
 local placeId = game.PlaceId
 
 local Games = {
-    -- legado da pedra
-    [4520749081]   = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/KingLegacy.lua"},
-    [6381829480]   = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/KingLegacy.lua"},
-    [15759515082]  = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/KingLegacy.lua"},
-    [2753915549]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
-    [4442272183]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
-    [79091703265657] = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
-    [7449423635]   = {Name = "Blox Fruits", Loader = "https://raw.githubusercontent.com/mainloadergg/xyz/refs/heads/main/bf.lua"},
+    [4520749081] = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/KingLegacy.lua"},
+    [6381829480] = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/KingLegacy.lua"},
+    [15759515082] = {Name = "King Legacy", Loader = "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/KingLegacy.lua"},
+    [93829858358973] = {Name = "+1 Muscle To Break Through Walls", Loader = "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/%2B1MuscleToBreakThroughWalls.lua"},
+    [10260193230] = {Name = "Meme Sea", Loader = "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/MemeSea.lua"},
 }
 
 local gameData = Games[placeId]
 
 if not gameData then
     if player then
-        player:Kick("Wrong game, This script only supports:\n— King Legacy & Blox Fruits")
+        player:Kick("wrong game")
     end
     return
 end
@@ -25,14 +22,3 @@ end
 local success, err = pcall(function()
     loadstring(game:HttpGet(gameData.Loader))()
 end)
-
-if not success then
-   warn("idk ni")
-    if player then
-        game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Load Error",
-            Text = "Failed to load " .. gameData.Name .. " script. Try again.",
-            Duration = 5
-        })
-    end
-end
